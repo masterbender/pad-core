@@ -4,3 +4,6 @@ target/
 .classpath
 .project
 src/main/webapp/resources/css/*
+.idea/
+pad.core.iml
+.DS_Store

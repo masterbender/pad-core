@@ -1,12 +1,15 @@
-package com.codenotfound.primefaces;
+package de.cap3.pad.core;
 
 import javax.faces.bean.ManagedBean;
+import java.util.logging.Logger;
 
 @ManagedBean
 public class HelloWorld {
 
-    private String firstName = "John";
+    private String firstName = "Johnny";
     private String lastName = "Doe";
+
+    final static Logger logger = Logger.getLogger(HelloWorld.class.toString());
 
     public String getFirstName() {
         return firstName;
@@ -25,6 +28,7 @@ public class HelloWorld {
     }
 
     public String showGreeting() {
+        logger.info("Sending greeting");
         return "Hello" + " " + firstName + " " + lastName + "!";
     }
 }
