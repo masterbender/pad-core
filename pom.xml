@@ -3,30 +3,30 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.codenotfound</groupId>
-    <artifactId>jsf-primefaces-wildfly</artifactId>
+    <groupId>de.cap3</groupId>
+    <artifactId>pad.core</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
 
-    <name>JSF - PrimeFaces Hello World Example using WildFly and Maven</name>
-    <url>http://www.codenotfound.com/2016/01/jsf-primefaces-hello-world-example-using-wildfly-and-maven.html</url>
+    <name>Pad Core - A Core JSF Project</name>
+    <url>http://www.cap3.de</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>1.7</java.version>
+        <java.version>1.8</java.version>
 
         <servlet.version>3.1.0</servlet.version>
-        <jsf.version>2.2.12</jsf.version>
-        <primefaces.version>5.3</primefaces.version>
+        <jsf.version>2.2.14</jsf.version>
+        <primefaces.version>6.1</primefaces.version>
 
-        <version.wildfly>9.0.2.Final</version.wildfly>
+        <version.wildfly>10.1.0.Final</version.wildfly>
         <jboss.home>${project.build.directory}/wildfly-${version.wildfly}</jboss.home>
         <server.config>standalone.xml</server.config>
 
-        <maven-compiler-plugin.version>3.3</maven-compiler-plugin.version>
-        <maven-dependency-plugin>2.10</maven-dependency-plugin>
-        <maven-resources-plugin.version>2.7</maven-resources-plugin.version>
-        <wildfly-maven-plugin.version>1.1.0.Alpha5</wildfly-maven-plugin.version>
+        <maven-compiler-plugin.version>3.6.1</maven-compiler-plugin.version>
+        <maven-dependency-plugin>3.0.1</maven-dependency-plugin>
+        <maven-resources-plugin.version>3.0.0</maven-resources-plugin.version>
+        <wildfly-maven-plugin.version>1.1.0.Final</wildfly-maven-plugin.version>
     </properties>
 
     <dependencies>
