@@ -7,8 +7,6 @@
 
     <container qualifier="wildfly" default="true">
         <configuration>
-            <!-- If you want to use an existing JBoss AS installation, change the value of this property to that path -->
-            <!-- If you've already set the JBOSS_HOME environment variable, you can remove this configuration block -->
             <property name="jbossHome">target/wildfly-10.1.0.Final</property>
             <property name="outputToConsole">true</property>
         </configuration>
