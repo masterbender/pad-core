@@ -1,17 +1,22 @@
 package de.cap3.pad.core;
 
 
-import javax.enterprise.context.SessionScoped;
+import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;
 import java.io.Serializable;
 import java.util.logging.Logger;
 
-@Named("HelloWorld")
-@SessionScoped
+@Named("helloWorld")
+@ApplicationScoped
 public class HelloWorld implements Serializable {
+    private String firstName;
+    private String lastName;
 
-    private String firstName = "Johnny";
-    private String lastName = "Doe";
+    public HelloWorld() {
+        firstName = "Johnny";
+        lastName = "Doe";
+    }
+
 
     final static Logger logger = Logger.getLogger(HelloWorld.class.toString());
 
