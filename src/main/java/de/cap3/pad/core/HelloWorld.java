@@ -1,10 +1,14 @@
 package de.cap3.pad.core;
 
-import javax.faces.bean.ManagedBean;
+
+import javax.enterprise.context.SessionScoped;
+import javax.inject.Named;
+import java.io.Serializable;
 import java.util.logging.Logger;
 
-@ManagedBean
-public class HelloWorld {
+@Named("HelloWorld")
+@SessionScoped
+public class HelloWorld implements Serializable {
 
     private String firstName = "Johnny";
     private String lastName = "Doe";
