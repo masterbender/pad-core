@@ -5,6 +5,8 @@
         http://jboss.org/schema/arquillian
         http://jboss.org/schema/arquillian/arquillian_1_0.xsd">
 
+    <defaultProtocol type="Servlet 3.0"/>
+
     <container qualifier="integration-test" default="true">
         <configuration>
             <property name="jbossHome">target/wildfly-10.1.0.Final</property>
@@ -12,8 +14,12 @@
         </configuration>
     </container>
 
-    <extension qualifier="selenium">
-        <property name="browser">*googlechrome</property>
+    <extension qualifier="webdriver">
+        <property name="browser">${browser}</property>
+    </extension>
+
+    <extension qualifier="graphene">
+        <property name="url">http://localhost:8080/</property>
     </extension>
 
 </arquillian>
